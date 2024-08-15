@@ -8,5 +8,9 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/email/**
+        - id: symon-portal
+          uri: http://localhost:4976
+          predicates:
+            - Path=/portal/**
 server:
   port: 8080
